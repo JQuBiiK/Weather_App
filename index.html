@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="search_container">
+
+            <div class="search_block">
+                <i class='bx bxs-map search_icon'></i>
+                <input class="search_input" type="text" placeholder="Введите местоположение">
+                <button class="bx bx-search search_btn"></button>
+            </div>
+
+            <div class="weather_container">
+                <div class="weather_block">
+                    <div class="info_weather">
+                        <div class="weather">
+                            <img src="images/cloud.png" class="weather_img">
+                            <p class="temperature">0<span>°C</span></p>
+                            <p class="description">Облачно</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="weather_details">
+
+                <div class="humidity">
+                    <i class='bx bx-water' ></i>
+                    <div class="humidity_text">
+                        <div class="humidity_info">
+                            <span>0%</span>
+                        </div>
+                        <p>Влажность</p>
+                    </div>
+                </div>
+
+                <div class="wind">
+                    <i class='bx bx-wind' ></i>
+                    <div class="wind_text">
+                        <div class="wind_info">
+                            <span>0 км/ч</span>
+                        </div>
+                        <p>Ветер</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="not_found">
+                <div class="not_found_container">
+                    <img class="not_found_img" src="images/404.png">
+                    <span>Упс!</span>
+                    <p>Местоположение не найдено!</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
